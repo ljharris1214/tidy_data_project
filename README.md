@@ -1,8 +1,26 @@
 ##Readme - Human Activity Recognition Using Smartphones Dataset Analysis
 
-This readme file is intended to explain the script, not the original data set.
+This readme file is a brief overview of the [run_analysis.R](run_analysis.R) script.
 
-A description of the variables, the data, and the work performed to clean up the data can be found in the CodeBook.md file.
+For a detailed description of the variables, data and transformations on the source data please see the [CodeBook.md](CodeBook.md) file.
+
+###Script 
+
+The [run_analysis.R](run_analysis.R) script was created to transform and anlyze the Human Activity Recognition Using Smartphones Dataset [1] as follows:
+
+1. Merge the training and the test sets to create one data set.
+2. Extract the measurements on the mean and standard deviation for each measurement. 
+3. Assign descriptive names to the activities in the data set.
+4. Appropriately label the data set with descriptive variable names. 
+5. Summarize the data set with the average of each variable for combinations of each activity and subject in the study.
+
+The script assumes that the data is available in your working directory but will, if required, download the working data for you.
+
+##Packages Required
+
+You will also need to install the [stringr](http://cran.r-project.org/web/packages/stringr/index.html) and [plyr](http://cran.r-project.org/web/packages/plyr/index.html) packages before running the script:
+
+###Source Data
 
 The original data set and a full description of the data is available at the UCI Repository:
 
@@ -12,35 +30,23 @@ The working copy of this data used in this script is located at:
 
 https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
 
-The script run_analysis.R was created to work with Human Activity Recognition Using Smartphones Dataset [1] and contains all the steps required to transform the data and analyze it as follows:
+###Source Data and Structure
 
-1. Merge the training and the test sets to create one data set.
-2. Extract the measurements on the mean and standard deviation for each measurement. 
-3. Uses descriptive activity names to name the activities in the data set.
-4. Appropriately label the data set with descriptive variable names. 
-5. Creates a second data set with the average of each variable for each activity and each subject.
+The Human Activity Recognition Using Smartphones Dataset contains various training and a test files organized and described as follows:
 
-The script assumes you have the data available in your working directory but will, if necessary, download the working data for you.
+* 'features_info.txt': Shows information about the variables used on the feature vector.
+* 'features.txt': List of all features.
+* 'activity_labels.txt': Links the class labels with their activity name.
+* 'train/X_train.txt': Training set.
+* 'train/y_train.txt': Training labels.
+* 'test/X_test.txt': Test set.
+* 'test/y_test.txt': Test labels.
+* 'train/subject_train.txt': Each row identifies the subject who performed the activity for each window sample. Its range is from 1 to 30. 
+* 'test/subject_test.txt' : equivalent to 'train/subject_train.txt'
 
-##Packages Required
+The files uder the *'train/Inertial Signals/'* and *'test/Inertial Signals/'* where not used for this analysis.
 
-You will also need to install the plyr and stringr packages before running the script.
-
-##Source Data and Structure
-
-Human Activity Recognition Using Smartphones Dataset Version 1.0 contains various training and a test files organized and described as follows:
-
-- 'features_info.txt': Shows information about the variables used on the feature vector.
-- 'features.txt': List of all features.
-- 'activity_labels.txt': Links the class labels with their activity name.
-- 'train/X_train.txt': Training set.
-- 'train/y_train.txt': Training labels.
-- 'test/X_test.txt': Test set.
-- 'test/y_test.txt': Test labels.
-- 'train/subject_train.txt': Each row identifies the subject who performed the activity for each window sample. Its range is from 1 to 30. 
-- 'test/subject_test.txt' : equivalent to 'train/subject_train.txt'
-
-The files uder the train/Inertial Signals/ and test/Inertial Signals/ where not used for this analysis.
+###Attribution and Use 
 
 [1] Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L. Reyes-Ortiz. Human Activity Recognition on Smartphones using a Multiclass Hardware-Friendly Support Vector Machine. International Workshop of Ambient Assisted Living (IWAAL 2012). Vitoria-Gasteiz, Spain. Dec 2012
 
