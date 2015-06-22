@@ -100,7 +100,7 @@ The table below summarizes the Output Variables written out to the file *'smartp
 
 3. Commas *','* and dashes *'-'* were replaced with periods *'.'*
 
-4. The mean and standard deviation columns were subsetted from the full list of all columns by matching of the *'..mean..'* and *'..std..'* substrings yielding 48 columns to be included selected for output
+4. The mean and standard deviation columns were subsetted from the full list of all columns by matching of the *'..mean..'* and *'..std..'* substrings yielding 48 measures included for output
 
 ### Observations (X)
 
