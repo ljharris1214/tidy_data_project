@@ -23,7 +23,7 @@ This document summarize the variables, data transformations and analysis perform
 * *'.std.'* in the field indicates that it is the standard deviation
 * *'.X'*, *'.Y'*, *'.Z'* in the field denote 3-axial signals in the X, Y and Z directions
 
-*Important:  Please see **'features_info.txt'** in source data for further details on processing*
+**Important:  Please see 'features_info.txt' in source data for further details on processing**
 
 The variable meanings are expressed as combination of these components, for example:
 
