@@ -108,7 +108,7 @@ The table below summarizes the Output Variables written out to the file *'smartp
 
 2. Leading and trailing whitespace where trimmed from each line
 
-3. Contiguos sequences of one or more whitespace characters were replaced by a comma *','* separator
+3. Contiguous sequences of one or more whitespace characters were replaced by a comma *','* separator
 
 4. The cleaned lines where read into `test.X` and `train.X` data frames and subsetted to include only the 48 mean and std columns 
 
