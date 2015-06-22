@@ -18,7 +18,7 @@ This document summarize the variables, data transformations and analysis perform
 * *'Gyro'* in the field indicates gyroscope data
 * *'Body'* indicates the body portion of the acceleration signal
 * *'Gravity'* indicates the gravity portion of the acceleration signal
-* *'Jerk'* derived measure based on body linear acceleration and angular velocity derived in time
+* *'Jerk'* is a derived measure based on body linear acceleration and angular velocity derived in time
 * *'.mean.'* in the field indicates that this is an average
 * *'.std.'* in the field indicates that it is the standard deviation
 * *'.X'*, *'.Y'*, *'.Z'* in the field denote 3-axial signals in the X, Y and Z directions
@@ -37,7 +37,7 @@ The table below summarizes the Output Variables written out to the file *'smartp
 
 | Field               | Type | Description
 |---------------------|------|------------------------------
-| split               | char | *test* or *train* to indicate if this is the from the test or train portion of the data set
+| split               | char | *'test'* or *'train'* to indicate if this is the from the test or train portion of the data set
 | subject             | int  | The number Id of the subject in the study (from 1 to 30)
 | activity            | char | One of six activities: WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING
 | subject             | int  | The numeric Id of subject in the study from 1 to 30
@@ -141,6 +141,6 @@ All lines from *'subject_test.txt'* (2,947 lines) and *'subject_train.txt'* (7,3
 
 ##Analysis
 
-An second data set, *'smartphone_activity_summary.txt'*, summarizes all measures accelerometer and gyroscope measurements by computing the mean for each combination of subject and activity
+An second data set `summary.data` summarizes all accelerometer and gyroscope measurements by computing the mean for each combination of subject and activity and saves it to *'smartphone_activity_summary.txt'*
 
-
+All column names except *'split'* which is not used to summarize the data.
