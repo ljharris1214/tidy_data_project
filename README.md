@@ -20,7 +20,7 @@ The script assumes that the data is available in your working directory but will
 
 You will also need to install the [stringr](http://cran.r-project.org/web/packages/stringr/index.html) and [plyr](http://cran.r-project.org/web/packages/plyr/index.html) packages before running the script:
 
-###Source Data
+###Source Data and Structure
 
 The original data set and a full description of the data is available at the UCI Repository:
 
@@ -29,8 +29,6 @@ http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartpho
 The working copy of this data used in this script is located at:
 
 https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
-
-###Source Data and Structure
 
 The Human Activity Recognition Using Smartphones Dataset contains various training and a test files organized and described as follows:
 
