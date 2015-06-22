@@ -70,7 +70,7 @@ train.data <- cbind(split, subject, activity, train.X)
 
 merged.data <- rbind(test.data,train.data)
 
-# Summary each variable for each activity and each subject.
+# Summarize each variable for each activity and each subject.
 summary.data <- ddply(merged.data, c("activity", "subject"), numcolwise(mean))
 write.table(summary.data, file = "smartphone_activity_summary.txt", row.names = F)
 write.table(merged.data, file = "smartphone_activity_data.txt", row.names = F)
