@@ -14,11 +14,11 @@ The [run_analysis.R](run_analysis.R) script was created to transform and anlyze 
 4. Appropriately label the data set with descriptive variable names. 
 5. Summarize the data set with the average of each variable for combinations of each activity and subject in the study.
 
-The script assumes that the data is available in your working directory but will, if required, download the working data for you.
+The script assumes that the data is available in your working directory but will, if required, download the working copy of the data for you.
 
 ###Packages Required
 
-You will also need to install the [stringr](http://cran.r-project.org/web/packages/stringr/index.html) and [plyr](http://cran.r-project.org/web/packages/plyr/index.html) packages before running the script:
+You will also need to install the [stringr](http://cran.r-project.org/web/packages/stringr/index.html) and [plyr](http://cran.r-project.org/web/packages/plyr/index.html) packages before running the script.
 
 ###Source Data and Structure
 
