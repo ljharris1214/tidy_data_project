@@ -40,7 +40,6 @@ The table below summarizes the Output Variables written out to the file *'smartp
 | split               | char | *'test'* or *'train'* to indicate if this is the from the test or train portion of the data set
 | subject             | int  | The number Id of the subject in the study (from 1 to 30)
 | activity            | char | One of six activities: WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING
-| subject             | int  | The numeric Id of subject in the study from 1 to 30
 | tBodyAcc.mean.X     | num  | Mean time domain signal for the body portion of the accelerometer X direction
 | tBodyAcc.mean.Y     | num  | Mean time domain signal for the body portion of the accelerometer Y direction
 | tBodyAcc.mean.Z     | num  | Mean time domain signal for the body portion of the accelerometer Z direction 
