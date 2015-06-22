@@ -6,7 +6,7 @@ This document summarize the variables, data transformations and analysis perform
 
 * `train.` and `test.` prefixes are used in variable names to indicate the data split they belong to (train or test data)
 * Where appropriate variable postfix names align to the source data conventions.
-* For example `test.X` refers to the observations in the test X_test.txt data file and `test.y` refers to the labels in the y_test.txt file
+* For example `test.X` refers to the observations in the test *X_test.txt* data file and `test.y` refers to the labels in the *y_test.txt* file
 
 ##Description of the Output Variables
 
@@ -23,7 +23,7 @@ This document summarize the variables, data transformations and analysis perform
 * *.std.* in the field indicates that it is the standard deviation
 * *.X*, *.Y*, *.Z* in the field denote 3-axial signals in the X, Y and Z directions
 
-**Important:  Please see features_info.txt in source data for further details on processing**
+*Important:  Please see **features_info.txt** in source data for further details on processing*
 
 The variable meanings are expressed as combination of these components, for example:
 
@@ -38,16 +38,16 @@ The table below summarizes the Output Variables written out to the file *smartph
 | Field               | Type | Description
 |---------------------|------|------------------------------
 | split               | char | *test* or *train* to indicate if this is the from the test or train portion of the data set
-| subject             | int  | *test* or *train* to indicate if this is the from the test or train portion of the data set
+| subject             | int  | The number Id of the subject in the study (from 1 to 30)
 | activity            | char | One of six activities: WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING
 | subject             | int  | The numeric Id of subject in the study from 1 to 30
-| tBodyAcc.mean.X     | num  | **Please read the previous *Variable Naming* section to decode the meaning of the fields below**
-| tBodyAcc.mean.Y     | num  | 
-| tBodyAcc.mean.Z     | num  | 
+| tBodyAcc.mean.X     | num  | Mean time domain signal for the body portion of the accelerometer X direction
+| tBodyAcc.mean.Y     | num  | Mean time domain signal for the body portion of the accelerometer Y direction
+| tBodyAcc.mean.Z     | num  | Mean time domain signal for the body portion of the accelerometer Z direction 
 | tBodyAcc.std.X      | num  | 
 | tBodyAcc.std.Y      | num  | 
 | tBodyAcc.std.Z      | num  | 
-| tGravityAcc.mean.X  | num  | 
+| tGravityAcc.mean.X  | num  | **Please read the previous *Variable Naming* section to decode the meaning of these fields**
 | tGravityAcc.mean.Y  | num  | 
 | tGravityAcc.mean.Z  | num  | 
 | tGravityAcc.std.X   | num  | 
@@ -96,7 +96,7 @@ The table below summarizes the Output Variables written out to the file *smartph
 
 1. The full list of all 561 columns was read from *features.txt*
 
-2. Open/close parentheses *()* used in the mean() and sum() portion of features were stripped from the text
+2. Open/close parentheses *()* used in the *mean()* and *sum()* portion of features were stripped from the text
 
 3. Commas *,* and dashes *-* were replaced with periods *.*
 
@@ -104,7 +104,7 @@ The table below summarizes the Output Variables written out to the file *smartph
 
 ### Observations (X)
 
-1. All lines from X_test.txt (2,947 lines) and X_train.txt (7,352 lines) where read using readLines
+1. All lines from *X_test.txt* (2,947 lines) and *X_train.txt* (7,352 lines) where read using `readLines`
 
 2. Leading and trailing whitespace where trimmed from each line
 
