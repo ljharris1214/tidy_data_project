@@ -1,4 +1,4 @@
-##Human Activity Recognition Using Smartphones Dataset Analysis
+##Readme - Human Activity Recognition Using Smartphones Dataset Analysis
 
 This readme file is intended to explain the script, not the original data set.
 
