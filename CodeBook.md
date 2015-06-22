@@ -127,11 +127,10 @@ All lines from *'subject_test.txt'* (2,947 lines) and *'subject_train.txt'* (7,3
 ### Test and Train Data Merging
 
 1. `test.data` and `train.data` data frames were constructed by binding column from earlier steps:
-
-* split  (literal value of "test" or "train")
-* subject (`test.subject` and `train.subject`)
-* activity (`test.y` and `train.y`)
-* training (`test.X` and `train.X`)
+   * split  (literal value of "test" or "train")
+   * subject (`test.subject` and `train.subject`)
+   * activity (`test.y` and `train.y`)
+   * training (`test.X` and `train.X`)
 
 2. `test.data` and `train.data` where row bound to a final `merged.data` that containes 10,299 observations and 51 variables
 
